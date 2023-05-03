@@ -1,0 +1,286 @@
+.modal-content {
+  max-width: 445px;
+  left: 25px;
+  display: none;
+}
+
+.titleModal {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
+}
+
+#title {
+  margin-top: 16px;
+  margin-bottom: 8px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #060607;
+}
+
+#subtitle {
+  color: #68696c;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.2px;
+  margin-bottom: 10px;
+}
+
+.menusCreateChannel {
+  height: 330px;
+  /* width: 100%; */
+  overflow: scroll;
+}
+
+.menusCreateChannel::-webkit-scrollbar {
+  height: 10px;
+  width: 5px;
+}
+
+.menusCreateChannel::-webkit-scrollbar-thumb {
+  background-color: #989aa0;
+  border-radius: 5px;
+}
+
+.contentCreateChannel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* height: 100%; */
+}
+
+.menuCreate {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 65px;
+  width: 410px;
+  border-radius: 8px;
+  border: 1px #ced0d6 solid;
+  margin-bottom: 2px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.menuCreate:hover {
+  background-color: #d8d9e39d;
+}
+
+.imgMenu {
+  margin-left: 18px;
+}
+
+.titleBtnModal {
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+#titleMenus {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #59595b;
+}
+
+.svgModal {
+  align-self: flex-end;
+  margin-right: 10px;
+}
+
+.btn-close {
+  position: absolute;
+  right: 0;
+  margin-right: 15px;
+  margin-top: 10px;
+}
+
+
+.modalCreateTfoot {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 102px;
+  /* width: 100%; */
+  background-color: #f2f3f5;
+}
+
+#back {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 70px;
+  width: 100%;
+  padding-left: 30px;
+  background-color: #f2f3f5;
+}
+
+#cursorBack {
+  width: 40px;
+  cursor: pointer;
+}
+
+.spanCreateModal {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.btnCreateModal {
+  height: 38px;
+  width: 92%;
+  margin: 8px;
+  border-radius: 4px;
+  color: #e5e7ec;
+  background-color: #6d6f78;
+  border: none;
+}
+
+.btnCreateModal:hover {
+  background-color: #5a5b61;
+}
+
+.menusTypeChannel {
+  height: 210px;
+  width: 100%;
+}
+
+.contentTypeChannel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.menusTypeChannel::-webkit-scrollbar {
+  height: 10px;
+  width: 5px;
+}
+
+.menusTypeChannel::-webkit-scrollbar-thumb {
+  background-color: #989aa0;
+  border-radius: 5px;
+}
+
+.spanType {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  height: 65px;
+  color: #7d7d81;
+}
+
+#skip {
+  text-decoration: none;
+  color: #1478e9;
+}
+
+#forCommunity {
+  margin-bottom: 5px;
+}
+
+.titleTypeChannel {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
+}
+
+.secondModal {
+  display: none;
+}
+
+.firstModal {
+  display: none;
+}
+
+.thirdModal {
+  display: none;
+}
+
+.titleNewChannel {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
+}
+
+.menusNewChannel {
+  height: 230px;
+}
+
+.contentNewChannel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* margin-top: 10px; */
+}
+
+.tfootNewChannel {
+  width: 100%;
+}
+
+.inputNewChannel {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.labelNewChannel {
+  margin-bottom: 5px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #626266;
+}
+
+.inputNC {
+  height: 42px;
+  background-color: #e0e0e8;
+  border-radius: 5px;
+  border: none;
+  padding-left: 12px;
+}
+
+.spanNew {
+  font-size: 13px;
+  display: flex;
+  line-height: 18px;
+  align-items: center;
+  margin-top: 10px;
+  color: #7d7d81;
+}
+
+.tfootNewChannel {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  background-color: #f2f3f5;
+  /* height: 100%; */
+}
+
+#btnNewChannel {
+ align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #5865f2;
+  color: #eff1f4;
+  width: 125px;
+  height: 38px;
+  margin-right: 15px;
+}
+
+.imgChannel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+}

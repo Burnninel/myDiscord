@@ -1,0 +1,181 @@
+
+.amigos {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 300px;
+    /* height: 100%; */
+    background-color: #2b2d31;
+    position: relative;
+  }
+  
+  .listFriends {
+    height: 100%;
+    overflow: auto;
+    padding: 10px;
+  }
+  
+  .listFriends::-webkit-scrollbar { width: 0px; }
+  
+  .searchFriendsMsg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 52px;
+    border-bottom: #1e1f22 1px solid;
+  }
+  
+  .divInput {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+    /* height: 100%; */
+  }
+  
+  .inputFriendsMsg {
+    height: 28px;
+    width: 220px;
+    padding: 6px;
+    margin: 8px;
+    font-size: 15px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    border-radius: 3px;
+    background-color: #1e1f22;
+    border: none;
+    text-overflow: ellipsis;
+  }
+  
+  .friendSelect {
+    display: flex;
+    align-items: center;
+    height: 42px;
+    color: #dbdee1;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 1px;
+    cursor: pointer;
+  }
+  
+  .friendSelect:hover { background-color: #ffffff1f; }
+  
+  .friendText {
+    padding-left: 15px;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  
+  .titleDirectMsg {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 12px;
+    height: 50px;
+    color: #747982;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  
+  .titleDM {
+    margin-left: 10px;
+    width: 100%;
+  }
+  
+  .titleDM:hover { color: #b5bac1; }
+  
+  .creatDM {
+    margin-right: 10px;
+    color: #b5bac1;
+    cursor: pointer;
+  }
+  
+  .funcFriends {
+    height: 52px;
+    background-color: #232428;
+  }
+  
+  .cardProfile {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 8px;
+  }
+  
+  .profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 38px;
+    padding: 1px;
+  }
+  
+  .profile:hover {
+    background-color: #ffffff1f;
+  }
+  
+  .picture {
+    height: 32px;
+    width: 32px;
+    border-radius: 180px;
+  }
+  
+  .userCardProfile {
+    display: flex;
+    flex-direction: column;
+    margin: 8px;
+    color: #f2f3ee;
+    max-width: 73px;
+    height: 34px;
+  }
+  
+  .textUserCardProfile {
+    font-weight: 500;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .tagUserCardProfile {
+    font-size: 12px;
+    color: #747982;
+  }
+  
+  .acctionCardProfile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #b5bac1;
+    margin-left: 6px;
+  }
+  
+  .iconActtion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    width: 32px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .iconActtion:hover { background-color: #ffffff1f; }
+  
+  #micMuted { display: none; }
+  
+  #hpMuted { display: none; }
+  
+  .color { color: #f23f42; }
+  
+  .componentes {
+    height: 100%;
+    width: 100%;
+    background-color: #313338;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: auto;
+  }

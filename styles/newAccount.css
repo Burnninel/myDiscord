@@ -1,0 +1,267 @@
+* { font-family: 'Schibsted Grotesk', sans-serif; }
+
+body { caret-color: transparent; }
+
+::selection {
+  background-color: transparent;
+  color: inherit;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-image: url("../images/background.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.create-account {
+  /* display: flex; */
+  position: fixed;
+  height: 618px;
+  width: 480px;
+  padding: 32px;
+  background-color: #313338;
+  color: #949ba4;
+  border-radius: 5px;
+}
+
+/* @media (max-height: 680px) {
+  .create-account {
+    height: 95vh;
+    width: 73vh;
+  }
+} */
+
+#title {
+  display: flex;
+  justify-content: center;
+  color: #f2f3f5;
+  font-size: 22px;
+  font-weight: 600;
+  cursor: default;
+  margin-top: 7px;
+  margin-bottom: 11px;
+}
+
+.form {
+  /* display: block; */
+  position: relative;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  /* width: 100%; */
+}
+
+.label {
+  color: #b5bac1;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.50px;
+  line-height: 16px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.invalid { color: #fa777c; }
+
+.error {
+  text-transform: initial;
+  font-size: 11px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.errorMail {
+  text-transform: initial;
+  font-size: 11px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.errorUser {
+  text-transform: initial;
+  font-size: 11px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.errorPw {
+  text-transform: initial;
+  font-size: 11px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.success {
+  color: #03ff25a1;
+}
+
+.input {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  border: none;
+  background-color: #1e1f22;
+  color: #f2f3f5;
+  font-size: 15px;
+  padding-left: 10px;
+  border-radius: 3px;
+}
+
+.inputs { margin-bottom: 14px; }
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: #5865f2;
+  font-weight: 500;
+  line-height: 24px;
+  height: 45px;
+  margin-top: 15px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#text-button {
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.gol { display: flex; }
+
+.data {
+  display: flex;
+  margin-top: 5px;
+}
+
+.data-left { margin-right: 10px; }
+
+.data-radius {
+  border-radius: 5px;
+  padding: 8px;
+  /* padding-right: ; */
+}
+
+.select {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 40px;
+  border: none;
+  background-color: #1e1f22;
+  color: #97999e;
+  font-size: 15px;
+  border-radius: 3px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+#dia {
+    
+  width: 48%;
+    
+}
+
+#mes {
+  width: 60%;
+}
+
+#ano {
+  width: 48%;
+}
+
+.checkbox {
+  position: relative;
+  height: 24px;
+  width: 44px;
+  background-color: #313338;
+  margin-top: 16px;
+  border-radius: 6px;
+  border: 1px solid #7e8085;
+}
+
+.campCheckbox {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+#termo {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  text-justify: inter-word;
+  cursor: pointer;
+  margin-left: 8px;
+  font-size: 11px;
+  margin-top: 12px;
+}
+
+.checkbox-after {
+  height: 24px;
+  width: 44px;
+  background-color: #5865f2;
+  margin-top: 16px;
+  border-radius: 5px;
+  border: 1px solid #7e8085;
+}
+
+.campCheckbox-after { display: flex; }
+
+.check {
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.login {
+  text-decoration: none;
+  color: #00a8fc;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.login:hover { text-decoration: underline; }
+
+.new-account {
+  cursor: default;
+  font-size: 11px;
+  font-weight: 400;
+  margin-top: 15px;
+}
+
+.terpol {
+  text-decoration: none;
+  cursor: pointer;
+  color: #00a8fc;
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.terpol:hover { text-decoration: underline; }
+
+select::-webkit-scrollbar { width: 9px; }
+
+select::-webkit-scrollbar-track { background: #313338; }
+
+select::-webkit-scrollbar-thumb {
+  background-color: #1e1f22;
+  border-radius: 5px;
+  border: 3px solid #313338;
+}

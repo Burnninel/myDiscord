@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/newAccount.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <title>Discord</title>
+</head>
+
+<body>
+    <div class="main col-12">
+        <div class="create-account">
+            <div class="col-12">
+                <div class="title-form">
+                    <h3 id="title">Criar uma conta</h3>
+                </div>
+                <div class="form">
+                    <div class="inputs">
+                        <label class="label" id="emailLabel">E-mail</label>
+                        <input type="text" class="input email" id="email">
+                    </div>
+                    <div class="inputs">
+                        <label class="label" id="username">Nome de usuario</label>
+                        <input type="text" class="input username" id="username">
+                    </div>
+                    <div class="inputs">
+                        <label class="label" id="pwLabel">Senha</label>
+                        <input type="password" class="input password" id="password">
+                    </div>
+                    <span class="label inputs" id="date">Data de Nascimento</span>
+                    <div class="data">
+                        <select class="select data-left data-radius" id="dia">
+                            <option value="0" class="day" id="day">Dia</option>
+                        </select>
+                        <select class="select data-left data-radius" id="mes">
+                            <option value="" id="mounth" class="mounth">Mês</option>
+                        </select>
+                        <select class="select data-radius" id="ano">
+                            <option value="" class="year" id="year">Ano</option>
+                        </select>
+                    </div>
+                    <div class="campCheckbox">
+                        <div class="checkbox"></div>
+                        <span id="termo">(Opcional) Tudo bem me mandar e-mails com atualizações do Discord, dicas e
+                            ofertas especiais. Você pode mudar isso a qualquer momento.</span>
+                    </div>
+                    <div class="campCheckbox-two">
+
+                    </div>
+                    <div class="button">
+                        <button type="button" class="btn col-12" id="text-button">Continuar</button>
+                    </div>
+                    <a rel="stylesheet" class="login">Já tem uma conta?</a>
+                    <div class="new-account">
+                        <span>Ao se registrar, você concorda com os <a class="terpol">termos
+                                de serviço</a> e a <a class="terpol">política de
+                                privacidade</a> do Discord.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="scripts/newAccount.js"></script>
+</body>
+
+</html>

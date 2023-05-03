@@ -1,0 +1,193 @@
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-height: 52px;
+    background-color: #313338;
+    border-bottom: #1e1f22 1px solid;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .buttonGroup { display: flex; overflow: absolute; }
+  
+  
+  .titleFriendHeader {
+    display: flex;
+    align-items: center;
+    color: #dbdee1;
+    height: 25px;
+    width:  110px;
+    padding: 10px;
+    margin-left: 8px;
+    margin-bottom: 1px;
+    border-right: 1px #3e4046 solid;
+    cursor: default;
+  }
+  
+  .iconFriendHeader { color: #747982; }
+  
+  .textFriendHeader {
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 8px;
+  }
+  
+  .btnHeader { margin-left: 15px; }
+  
+  .btnAvaible {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 24px;
+    margin-right: 6px;
+    font-size: 17px;
+    font-weight: 500;
+    background-color: #313338;
+    color: #afb0b1;
+    border-radius: 4px;
+    border: none;
+  }
+  
+  .btnAvaible:hover {
+    background-color: #ffffff1f;
+    color: #dbdee1;
+  }
+  
+  #btnAddFriend {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 24px;
+    margin-right: 6px;
+    font-size: 16px;
+    color: #e8ecef;
+    border-radius: 4px;
+    border: none;
+    background-color: #239b57;
+    white-space: nowrap;
+  }
+  
+  .funcHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 160px;
+    background-color: #313338;
+    color: #b5bac1;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  
+  .svgHeader { cursor: pointer; }
+  
+  .newGroup {
+    height: 25px;
+    padding-right: 16px;
+  }
+  
+  .help {
+    display: flex;
+    border-left: solid 1px #3f4147;
+    height: 22px;
+    padding-left: 16px;
+  
+  }
+  
+  @media (max-width: 900px) {
+    .newGroup {
+      display: none;
+    }
+  
+    .funcHeader {
+      width: 110px;
+    }
+  
+    .help {
+      border-left: 0px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .titleFriendHeader {
+      border: 0px;
+    }
+  }
+  
+  .helpSvg {
+    padding-left: 16px;
+  }
+  
+  .double {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+  }
+  
+  .one {
+    background-color: #313338;
+    width: 100%;
+    border-right: #3f4147 1px solid;
+    padding: 18px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  
+  .searchFriend {
+    display: flex;
+    height: 34px;
+    background-color: #1e1f22;
+    border: #1e1f22;
+    box-shadow: none;
+    border-radius: 5px;
+    position: relative;
+  }
+  
+  .algum {
+    height: 100%;
+    width: 30px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  
+  .inputFriends {
+    height: 100%;
+    width: 100%;
+  
+    position: relative;
+    padding-left: 15px;
+    border-radius: 5px;
+    background-color: #1e1f22;
+    border: none;
+    caret-color: white;
+    outline: none;
+  }
+  
+  .svgFriend {
+    height: 100%;
+    color: #999da3;
+   
+  }
+  
+  .two {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 43%;
+    /* background-color: #239b57; */
+  }
+  
+  @media (max-width: 1200px) {
+    .two {
+      display: none;
+    }
+  
+    .one {
+      width: 100%;
+    }
+  }
