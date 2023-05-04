@@ -109,7 +109,7 @@
   background-color: #f2f3f5;
 }
 
-#back {
+.back {
   display: flex;
   flex-direction: column;
   justify-content: center;

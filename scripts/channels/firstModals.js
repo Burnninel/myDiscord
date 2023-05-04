@@ -55,7 +55,7 @@ function modalCreateTfoot(span, button, element) {
 
 function modalTypeTfoot(param) {
 
-    var tfoot = `<div id="back"><span id="cursorBack">Voltar</span></div>`;
+    var tfoot = `<div class="back" id="backTypeChannel"><span id="cursorBack">Voltar</span></div>`;
 
     $(`${param}`).append(tfoot);
 
@@ -119,17 +119,21 @@ $(document).one('click', '.funcChanels', function() {
 
 });
 
-$(document).one('click', '#explorer', function() {
-    
-    $('.firstModal').hide();
+$(document).one('click', '.menuCreate', function() {
     
     secondModal();
 
+});
+
+$(document).on('click', '.menuCreate', function() {
+    
+    $('.firstModal').hide();
+    
     $('.secondModal').show();
 
 });
 
-$(document).one('click', '#back', function() {
+$(document).on('click', '#backTypeChannel', function() {
     
     $('.secondModal').hide();
 
@@ -141,7 +145,7 @@ function tfootNewChannel(param) {
 
     var tfoot = `
                     <div class="tfootNewChannel">
-                        <div id="back"><span id="cursorBack">Voltar</span></div>
+                        <div class="back" id="backNewChannel"><span id="cursorBack">Voltar</span></div>
                         <button id="btnNewChannel">Criar</button>
                     </div>
                 `;
@@ -200,10 +204,14 @@ function createNewChannel() {
 };
 
 $(document).one('click', '#forCommunity', function() {
-    $('.secondModal').hide();
 
     infoNewChannel();
     
+});
+
+$(document).on('click', '#forCommunity, #forFriends', function() {
+    $('.secondModal').hide();
+
     $('.thirdModal').show();
 });
 
@@ -211,4 +219,12 @@ $(document).one('click', '#btnNewChannel', function() {
     
     createNewChannel();
     
+});
+
+$(document).on('click', '#backNewChannel', function() {
+    
+    $('.thirdModal').hide();
+
+    $('.secondModal').show();
+
 });
