@@ -1,7 +1,5 @@
 # myDiscord
 
-
-
 # Tecnologias: 
     -> HTML, CSS, Bootstrap, JavaScript, JQuery.
 -------------------------------------------------
