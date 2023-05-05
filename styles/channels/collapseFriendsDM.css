@@ -1,4 +1,5 @@
 .collapseFriendsDM {
+    display: none;
     position: relative;
     width: 440px;
     height: 398px;

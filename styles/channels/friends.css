@@ -88,10 +88,16 @@
   color: #b5bac1;
 }
 
-.creatDM {
+.createDM {
   margin-right: 10px;
   color: #b5bac1;
   cursor: pointer;
+  border: none;
+
+}
+
+.createDM:focus {
+  border: none;
 }
 
 .funcFriends {
