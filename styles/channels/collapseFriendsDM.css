@@ -20,6 +20,11 @@
     padding-top: 12px;
 }
 
+.svgFriendsDM {
+    display: none;
+    cursor: pointer;
+}
+
 #titleCollapse {
     font-size: 20px;
     font-weight: 600;

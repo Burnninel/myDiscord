@@ -71,3 +71,23 @@ $(document).on('click', '.btnCollapse', function() {
 
     $('.collapseFriendsDM').hide();
 });
+
+
+// Isso aqui ficou meio estranho mas foi a unica maneira de gerar o "x" do card msg direta no hover, 
+// não tem como puxar o elemento direto por causa que ta sendo gerado no id, ai tem que usar o .on()
+
+$(document).on('click', function() {
+   
+    $('.friendsDM').hover(function() {
+    
+        $('.svgFriendsDM').toggle();
+    
+    });
+
+})
+
+$(document).on('click', '.svgFriendsDM', function() {
+   
+    $('.friendsDM').remove();
+
+});
