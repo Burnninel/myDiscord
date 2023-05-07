@@ -18,14 +18,24 @@ function card() {
                 `;            
    
     $('.collapseFriendsDM').append(card);
-}
+};
 
 $(document).one('click', '.createDM', function() {
     card();
 });
 
 $(document).on('click', '.createDM', function() {
-    $('.collapseFriendsDM').show();
+    const collapse = $('.collapseFriendsDM')
+
+    collapse.toggle();
+});
+
+$('#main').click(function() {
+    var name = $('#inputFriendDM');
+
+    $('.collapseFriendsDM').hide();
+
+    name.val('');
 });
 
 function newCardFriend(name) {
