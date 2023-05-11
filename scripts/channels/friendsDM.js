@@ -80,7 +80,7 @@ $(document).ready(function () {
 
         newCardFriend(name.val(), idFriends, idFriends);
 
-        idFriends+
+        idFriends++
 
             name.val('');
 
@@ -96,6 +96,7 @@ $(document).ready(function () {
 
             $(element).hover(function () {
                 $(`.svgFriendsDM#${id}`).show();
+                console.log($(`.svgFriendsDM#${id}`))
             },
             function(){
                 $(`.svgFriendsDM#${id}`).hide();
