@@ -1,6 +1,7 @@
 function card() {
+    
     const card =
-                `
+        `
                     <div class="collapseHeader">
                         <span id="titleCollapse">Selecionar amigos</span>
                         <span id="subtitleCollapse">Você pode adicionar novos amigos a Mensagens Diretas</span>
@@ -15,33 +16,40 @@ function card() {
                     <div class="footerCollapse" >
                         <button class="btnCollapse">Criar MD</button>
                     </div>
-                `;            
-   
+                `;
+
     $('.collapseFriendsDM').append(card);
 };
 
-$(document).one('click', '.createDM', function() {
+$(document).one('click', '.createDM', function () {
+    
     card();
+
 });
 
-$(document).on('click', '.createDM', function() {
-    const collapse = $('.collapseFriendsDM')
+$(document).on('click', '.createDM', function () {
+    
+    const collapse = $('.collapseFriendsDM');
 
     collapse.toggle();
+
 });
 
-$('#main').click(function() {
+$('#main').click(function () {
+
     var name = $('#inputFriendDM');
 
     $('.collapseFriendsDM').hide();
 
     name.val('');
+
 });
 
-function newCardFriend(name) {
-    var content = 
+function newCardFriend(name, id) {
+
+    var content =
                 `
-                    <div class="friendsDM">
+                    <div class="friendsDM" id="friendsDM${id}">
                         <div class="cardFriendDM">
                             <svg xmlns="http://www.w3.org/2000/svg" width="34px" height="34px" viewBox="0 0 1024 1024">
                                 <circle cx="512" cy="512" r="512" style="fill:#5865f2" />
@@ -49,45 +57,61 @@ function newCardFriend(name) {
                             </svg>
                             <span class="userFriendDM">${name}</span>
                         </div>
-                        <div class="svgFriendsDM">
+                        <div class="svgFriendsDM" id="friendsDM${id}">
                             <svg aria-hidden="true" role="img" class="closeIcon-1NwtbI" width="16" height="16" viewBox="0 0 24 24"><path fill="currentColor" d="M18.4 4L12 10.4L5.6 4L4 5.6L10.4 12L4 18.4L5.6 20L12 13.6L18.4 20L20 18.4L13.6 12L20 5.6L18.4 4Z"></path></svg>
                         </div>
                     </div>
                 `;
 
     $('.listFriends').append(content);
+
 };
 
-$(document).on('click', '.btnCollapse', function() {
-    var name = $('#inputFriendDM');
+$(document).ready(function () {
 
-    if(!name.val()) {
-        return false;
-    };
+    var idFriends = 1;
 
-    newCardFriend(name.val());
+    $(document).on('click', '.btnCollapse', function () {
+        var name = $('#inputFriendDM');
 
-    name.val('');
+        if (!name.val()) {
+            return false;
+        };
 
-    $('.collapseFriendsDM').hide();
-});
+        newCardFriend(name.val(), idFriends, idFriends);
 
+        idFriends+
 
-// Isso aqui ficou meio estranho mas foi a unica maneira de gerar o "x" do card msg direta no hover, 
-// não tem como puxar o elemento direto por causa que ta sendo gerado no id, ai tem que usar o .on()
+            name.val('');
 
-$(document).on('click', function() {
-   
-    $('.friendsDM').hover(function() {
-    
-        $('.svgFriendsDM').toggle();
-    
+        $('.collapseFriendsDM').hide();
+
+        hover();
     });
 
-})
+    function hover() {
 
-$(document).on('click', '.svgFriendsDM', function() {
-   
-    $('.friendsDM').remove();
+        $('.friendsDM').each((i, element) => {
+            const id = $(element).attr('id');
+
+            $(element).hover(function () {
+                $(`.svgFriendsDM#${id}`).show();
+            },
+            function(){
+                $(`.svgFriendsDM#${id}`).hide();
+            });
+
+        });
+    };
+
+    hover();
 
 });
+
+$(document).on('click', '.svgFriendsDM', function () {
+
+    var idf = '#' + $(this).attr('id');
+
+    $('.friendsDM').remove(idf);
+
+});    

@@ -1,3 +1,7 @@
+.modal {
+  display: none;
+}
+
 .modal-content {
   max-width: 445px;
   left: 25px;
@@ -29,7 +33,6 @@
 
 .menusCreateChannel {
   height: 330px;
-  /* width: 100%; */
   overflow: scroll;
 }
 
@@ -49,7 +52,6 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  /* height: 100%; */
 }
 
 .menuCreate {
@@ -105,7 +107,6 @@
   justify-content: center;
   align-items: center;
   height: 102px;
-  /* width: 100%; */
   background-color: #f2f3f5;
 }
 
@@ -219,7 +220,6 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  /* margin-top: 10px; */
 }
 
 .tfootNewChannel {
@@ -260,9 +260,7 @@
 .tfootNewChannel {
   display: flex;
   align-items: center;
-  /* justify-content: center; */
   background-color: #f2f3f5;
-  /* height: 100%; */
 }
 
 #btnNewChannel {
