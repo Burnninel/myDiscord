@@ -19,4 +19,4 @@
 ### Descrição  
 Este é um projeto clonado do Discord, concebido com propósitos acadêmicos.
 
-Até o presente momento, é possível criar contas, efetuar login, adicionar/remover cards de mensagens e também criar novos canais. Todas essas informações são salvas em localStorage, de modo que as alterações permanecem mesmo após a atualização da página.  
+Até o presente momento, é possível criar contas, efetuar login, adicionar/remover cards de mensagens e também criar novos canais. Todas essas informações são salvas em localStorage, de modo que as alterações permanecem mesmo após a atualização da página.  Todas as telas já estão responsivas, assim como também os cursores estão apropriados a cada elemento.
