@@ -1,41 +1,7 @@
-# myDiscord
+<h1 align="center">Discord Clone Clone</h1>
+<h3 align="left">Connect with me:</h3>
+<p align="left">
+</p>
 
-# Tecnologias: 
-    -> HTML, CSS, Bootstrap, JavaScript, JQuery.
--------------------------------------------------
-
-# Funcionalidade:
-    -> Criar conta (localStorage).
-    -> Acessar conta (validação com as credencias do localStorage)
-    -> Mutar e desmutar.
-    -> Criar novo canal.
-    -> Ambas as 3 telas ja se encontram responsivas.
--------------------------------------------------------------------
-
-# Correções:
-    
-## Tela createAccount: 
-    -> Ao criar um conta, se você colocar um usurario ja existente, visualmente da como valido, mas não armazena no localSotage.
-
-## Tela Friends:
-    -> Quando você muta o audio o microfone não muta o do mic junto.
-    -> O username ainda não está sendo armazendo no localStorage, então o usuario que aparece é um valor fixo.
-
-## Tela channels:
-
-* _Modals_
-    (Corrigido) -> Terceiro modal da criação do novo canal (onde você define o nome do canal), o botão "voltar" não esta funcionando.
-    (Corrigido) -> Por estar sendo usado o metodo .one(), ao voltar pro modal anterior, ele para de executar o codigo e não deixa você avançar para o próximo.
-
-* _threeGroupChannels_  (Botão "+" do componente channels)
-    -> Bug no margin-bottom.
-
-## Responsividade
-    -> Erro de responsividade no zoom 400% o input some e o svg de lupa não.
----------------------------------------------------------------------------------------------------------------------------------------------------
-
-# A ser desenvolvido:
-    -> Lista de amigos ativos: Irá aparecer amigos que você poderá "adicionar", será apenas visual, será possivel definir o nome e status.
-    -> Tela configurações.
-    -> Tela de conversa.
-    -> Criar grupo.
+<h3 align="left">Languages and Tools:</h3>
+<p align="left"> <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> </p>
