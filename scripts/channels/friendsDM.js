@@ -45,11 +45,13 @@ $('#main').click(function () {
 
 });
 
-function newCardFriend(name, id) {
+function newCardFriend(name) {
+
+    var random = Math.floor(Math.random() * 1000) + 1;
 
     var content =
                 `
-                    <div class="friendsDM" id="friendsDM${id}">
+                    <div class="friendsDM" id="friendsDM${random}">
                         <div class="cardFriendDM">
                             <svg xmlns="http://www.w3.org/2000/svg" width="34px" height="34px" viewBox="0 0 1024 1024">
                                 <circle cx="512" cy="512" r="512" style="fill:#5865f2" />
@@ -57,55 +59,63 @@ function newCardFriend(name, id) {
                             </svg>
                             <span class="userFriendDM">${name}</span>
                         </div>
-                        <div class="svgFriendsDM" id="friendsDM${id}">
-                            <svg aria-hidden="true" role="img" class="closeIcon-1NwtbI" width="16" height="16" viewBox="0 0 24 24"><path fill="currentColor" d="M18.4 4L12 10.4L5.6 4L4 5.6L10.4 12L4 18.4L5.6 20L12 13.6L18.4 20L20 18.4L13.6 12L20 5.6L18.4 4Z"></path></svg>
+                        <div class="svgFriendsDM" id="friendsDM${random}">
+                            <svg aria-hidden="true" role="img" class="closeIcon-1NwtbI" width="16" height="16" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M18.4 4L12 10.4L5.6 4L4 5.6L10.4 12L4 18.4L5.6 20L12 13.6L18.4 20L20 18.4L13.6 12L20 5.6L18.4 4Z"></path>
+                            </svg>
                         </div>
                     </div>
                 `;
 
-    $('.listFriends').append(content);
+    $('.allFriendsDM').append(content);
 
 };
 
+function hover() {
+
+    $('.friendsDM').each((i, element) => {
+        const id = $(element).attr('id');
+
+        $(element).hover(function () {
+            $(`.svgFriendsDM#${id}`).show();
+        },
+        function(){
+            $(`.svgFriendsDM#${id}`).hide();
+        });
+
+    });
+
+}; 
+
 $(document).ready(function () {
 
-    var idFriends = 1;
-
     $(document).on('click', '.btnCollapse', function () {
+        
         var name = $('#inputFriendDM');
 
         if (!name.val()) {
             return false;
         };
 
-        newCardFriend(name.val(), idFriends, idFriends);
+        newCardFriend(name.val());
 
-        idFriends++
-
-            name.val('');
+        name.val('');
 
         $('.collapseFriendsDM').hide();
-
+    
         hover();
+
+        var friends = $('.allFriendsDM').html();
+        localStorage.setItem('friends', friends);
+        
     });
 
-    function hover() {
-
-        $('.friendsDM').each((i, element) => {
-            const id = $(element).attr('id');
-
-            $(element).hover(function () {
-                $(`.svgFriendsDM#${id}`).show();
-                console.log($(`.svgFriendsDM#${id}`))
-            },
-            function(){
-                $(`.svgFriendsDM#${id}`).hide();
-            });
-
-        });
+    var friendsLocal = localStorage.getItem('friends');
+    
+    if (friendsLocal) {
+        $('.allFriendsDM').append(friendsLocal);
+        hover();
     };
-
-    hover();
 
 });
 
@@ -114,5 +124,8 @@ $(document).on('click', '.svgFriendsDM', function () {
     var idf = '#' + $(this).attr('id');
 
     $('.friendsDM').remove(idf);
+
+    var friends = $('.allFriendsDM').html();
+    localStorage.setItem('friends', friends);
 
 });    
