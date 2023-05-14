@@ -239,12 +239,24 @@ $(document).on('click', '#btnNewChannel', function() {
 
     createNewChannel();
 
+    var channels = $('.groupChanelsTwo').html();
+    localStorage.setItem('channels', channels);
+
+
     $('.inputNC').val('');
 
     $('.modal').hide();
     $('.modal-backdrop').hide();
     
 });
+
+$(document).ready(function () {
+    var channelsLocalStorage = localStorage.getItem('channels');
+    
+    if (channelsLocalStorage) {
+        $('.groupChanelsTwo').append(channelsLocalStorage);
+    };
+})
 
 $(document).on('click', '#backNewChannel', function() {
     
