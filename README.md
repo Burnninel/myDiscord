@@ -1,19 +1,11 @@
-<div align="center">
-<img src="" align="center" style="width: 100%" />
-</div>  
-  
-
-### <div align="center">CLone Discord (Front-end)</div>  
-  
-
+# <div align="center">CLone Discord (Front-end)</div>  
 <br/>  
 
-
-## My Skill Set  
-<table><tr><td valign="top" width="100%" justify-content: center;>
+## Tecnologias  
+<table><tr><td valign="top" width="100%" align="center">
 
 ### Frontend  
-<div align="center" style="display: flex; just">  
+<div align="center">  
 <a href="https://getbootstrap.com/docs/3.4/javascript/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/bootstrap-plain.svg" alt="Bootstrap" height="50" /></a>  
 <a href="https://www.w3schools.com/css/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/css3-original-wordmark.svg" alt="CSS3" height="50" /></a>  
 <a href="https://en.wikipedia.org/wiki/HTML5" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/html5-original-wordmark.svg" alt="HTML5" height="50" /></a>  
