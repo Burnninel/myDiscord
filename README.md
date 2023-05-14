@@ -10,9 +10,7 @@
 
 
 ## My Skill Set  
-<table><tr><td valign="top" width="100%" align="center">
-
-
+<table><tr><td valign="top" width="100%" justify-content: center;>
 
 ### Frontend  
 <div align="center" style="display: flex; just">  
