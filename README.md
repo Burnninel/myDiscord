@@ -17,29 +17,3 @@
 Este é um projeto clonado do Discord, concebido com propósitos acadêmicos.
 
 Até o presente momento, é possível criar contas, efetuar login, adicionar/remover cards de mensagens e também criar novos canais. Todas essas informações são salvas em localStorage, de modo que as alterações permanecem mesmo após a atualização da página.  
-  
-
-<br/>  
-
-  
-
-<br/>  
-
-<div align="center">
-<img src="https://komarev.com/ghpvc/?username=rishavanand&&style=flat-square" align="center" />
-</div>  
-  
-
-<br/>  
-
-<div align="center">
-            <a href="https://www.buymeacoffee.com/rishavanand" target="_blank" style="display: inline-block;">
-                <img
-                    src="https://img.shields.io/badge/Donate-Buy%20Me%20A%20Coffee-orange.svg?style=flat-square&logo=buymeacoffee" 
-                    align="center"
-                />
-            </a></div>
-<br />
-
-----
-<div align="center">Generated using <a href="https://profilinator.rishav.dev/" target="_blank">Github Profilinator</a></div>
