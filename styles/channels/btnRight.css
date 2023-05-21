@@ -1,0 +1,48 @@
+#menu-de-contexto {
+    position: fixed;
+    height: 336px;
+    width: 216px;
+    background-color: #111214;
+    color: #8c9096;
+    border-radius: 4px;
+    padding-left: 0;
+    padding-top: 4px;
+    font-size: 14px;
+}
+
+.listButton {
+    margin: 4px 8px 4px 8px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    cursor: pointer;
+    padding-left: 6px;
+    height: 34px;
+    border-radius: 2px;
+}
+
+li:hover {
+    background-color: #5865f2;
+    color: #ffffff;
+
+}
+
+.separeteLine {
+    margin: 0px 12px 0px 12px;
+}
+
+.inviteBtn {
+    color: #7279bc;
+}
+
+.removeChannel {
+    color: #d71515;
+}
+
+.removeChannel:hover {
+    color: #ffffff;
+    background-color: #d52020;
+}

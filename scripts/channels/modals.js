@@ -197,9 +197,10 @@ function infoNewChannel() {
 function createNewChannel() {
     var input = $('.inputNC').val();
     var primeiraLetra = input.charAt(0).toUpperCase();
+    var random = Math.floor(Math.random() * 1000) + 1;
     
     var content =   `
-                    <div class="hoverChannel">
+                    <div class="hoverChannel" id="${random}">
 
                         <div class="wherechannel"></div>
                         <div class="directMsg">
