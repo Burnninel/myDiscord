@@ -1,41 +1,22 @@
-# myDiscord
+# <div align="center">CLone Discord (Front-end)</div>  
+<br/>  
 
-# Tecnologias: 
-    -> HTML, CSS, Bootstrap, JavaScript, JQuery.
--------------------------------------------------
+## <div align="center">Tecnologias</div>   
 
-# Funcionalidade:
-    -> Criar conta (localStorage).
-    -> Acessar conta (validação com as credencias do localStorage)
-    -> Mutar e desmutar.
-    -> Criar novo canal.
-    -> Ambas as 3 telas ja se encontram responsivas.
--------------------------------------------------------------------
+<div align="center">  
+<a href="https://getbootstrap.com/docs/3.4/javascript/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/bootstrap-plain.svg" alt="Bootstrap" height="50" /></a>  
+<a href="https://www.w3schools.com/css/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/css3-original-wordmark.svg" alt="CSS3" height="50" /></a>  
+<a href="https://en.wikipedia.org/wiki/HTML5" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/html5-original-wordmark.svg" alt="HTML5" height="50" /></a>  
+<a href="https://www.javascript.com/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/javascript-original.svg" alt="JavaScript" height="50" /></a>  
+<a href="https://jquery.com/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/jquery.png" alt="jQuery" height="50" /></a> 
+</div>  
 
-# Correções:
-    
-## Tela createAccount: 
-    -> Ao criar um conta, se você colocar um usurario ja existente, visualmente da como valido, mas não armazena no localSotage.
 
-## Tela Friends:
-    -> Quando você muta o audio o microfone não muta o do mic junto.
-    -> O username ainda não está sendo armazendo no localStorage, então o usuario que aparece é um valor fixo.
+<br/> 
 
-## Tela channels:
 
-* _Modals_
-    (Corrigido) -> Terceiro modal da criação do novo canal (onde você define o nome do canal), o botão "voltar" não esta funcionando.
-    (Corrigido) -> Por estar sendo usado o metodo .one(), ao voltar pro modal anterior, ele para de executar o codigo e não deixa você avançar para o próximo.
 
-* _threeGroupChannels_  (Botão "+" do componente channels)
-    -> Bug no margin-bottom.
+### Descrição  
+Este é um projeto clonado do Discord, concebido com propósitos acadêmicos.
 
-## Responsividade
-    -> Erro de responsividade no zoom 400% o input some e o svg de lupa não.
----------------------------------------------------------------------------------------------------------------------------------------------------
-
-# A ser desenvolvido:
-    -> Lista de amigos ativos: Irá aparecer amigos que você poderá "adicionar", será apenas visual, será possivel definir o nome e status.
-    -> Tela configurações.
-    -> Tela de conversa.
-    -> Criar grupo.
+Até o presente momento, é possível criar contas, efetuar login, adicionar/remover cards de mensagens e também criar novos canais. Todas essas informações são salvas em localStorage, de modo que as alterações permanecem mesmo após a atualização da página.  Todas as telas já estão responsivas, assim como também os cursores estão apropriados a cada elemento.
