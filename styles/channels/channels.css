@@ -1,10 +1,10 @@
 .chanels {
   display: flex;
   flex-direction: column;
+  overflow: auto;
+  background-color: #1e1f22;
   height: 100%;
   min-width: 72px;
-  background-color: #1e1f22;
-  overflow: auto;
 }
 .chanels::-webkit-scrollbar {
   width: 0px;
@@ -51,14 +51,13 @@
 }
 
 .logoDiscord {
+  position: relative;
+  cursor: pointer;
+  background-color: #15610d;
   height: 48px;
   width: 48px;
   margin-top: 12px;
-  background-color: #5865f2;
   border-radius: 16px;
-  border: #5865f2;
-  position: relative;
-  cursor: pointer;
 }
 
 
@@ -69,8 +68,8 @@
   cursor: pointer;
   text-transform: uppercase;
   background-color: #212327b0;
-  border: #242b7cd2 1px solid;
-  color: #ffffffd2;
+  border: #15610d 1px solid;
+  color: #fff;
   height: 48px;
   width: 48px;
   border-radius: 180px;
@@ -83,28 +82,28 @@
 .logoChanels:hover {
   height: 50px;
   width: 50px;
-  box-shadow: 0px 0px 2px 1px #242b7cca;
-  animation: boxShadow 2s;
+  margin-bottom: 8px;
+  box-shadow: 0px 0px 2px 1px #15610d;
+  animation: boxShadow 1.5s;
 }
 
 @keyframes boxShadow {
-  0% {
-    transform: rotateZ(-360deg)
+  100% {
+    transform: rotateZ(360deg)
   }
-
 }
 
 .funcChanels {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+  color: #15610d;
+  background-color: #313338;
   height: 48px;
   width: 48px;
-  background-color: #313338;
   border-radius: 180px;
   margin-bottom: 8px;
-  color: #239b57;
-  cursor: pointer;
 }
 
 #explorer {
@@ -112,10 +111,9 @@
 }
 
 .funcChanels:hover {
-  background-color: #239b57;
+  background-color: #15610d;
   color: #e9ecef;
   border-radius: 16px;
-  transition: 0.1s;
 }
 
 #divHr {
