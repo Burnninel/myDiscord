@@ -97,8 +97,6 @@ $(document).ready(function () {
         var pwLabel = $('#pwLabel');
         var userLabel = $('#username');
         
-        var invalid = $('.invalid');
-
         function funcAddError(element, nameClass, message) {
             element.addClass('invalid').append(`<span class="${nameClass}"> - ${message}</span>`);
         };
@@ -122,73 +120,55 @@ $(document).ready(function () {
         if (localStorage.allUsers) {
             allUsers = JSON.parse(localStorage.allUsers);
         };
+        
+        if (!email) {
+            usuarioInvalido = true;
+            if (!emailLabel.hasClass('invalid')) {
+                funcAddError(emailLabel, 'error', 'Digite um email válido.');
+            }
+        };
 
         for (let item of allUsers) {
-            if (item.email === email || !email || !username || !password) {
+            console.log(item.email)
+            if (item.email == email) {
                 usuarioInvalido = true;
-            };
+                $('.error').remove();
+                funcAddError(emailLabel, 'error', 'Email ja cadastrado.')
+            }
         };
 
-        if (usuarioInvalido && invalid.length < 1) {
-            $('.errorMail').remove();
-            funcAddError(emailLabel, 'error', 'Email ja cadastrado.');
+        if(!usuarioInvalido) {
+            funcAddSuccess(email, emailLabel, 'errorMail', 'error');
         };
 
-        if (!usuarioInvalido) {
-            $('.error').remove();
-            emailLabel.removeClass('invalid');
-            emailLabel.addClass('success');
-        };
-
-        if (!email && invalid.length < 1 && !usuarioInvalido) {
-            funcAddError(emailLabel, 'errorMail', 'Preencha um email valido.');
-        };
-
-        funcAddSuccess(email, emailLabel, 'errorMail', 'error');
-
-        if (!password && invalid.length < 1) {
-            funcAddError(pwLabel, 'errorPw', 'Preencha uma senha valida.');
-        };
-
-        funcAddSuccess(password, pwLabel, 'errorPw');
-
-        if (!username && invalid.length < 1) {
-            funcAddError(userLabel, 'errorUser', 'Usuario invalido.');
+        if (!username) {
+            usuarioInvalido = true;
+            if (!userLabel.hasClass('invalid')) {
+                funcAddError(userLabel, 'errorUser', 'Usuario invalido.');
+            }
         };
 
         funcAddSuccess(username, userLabel, 'errorUser');
-
+        
+        if (!password) {
+            usuarioInvalido = true;
+            if (!pwLabel.hasClass('invalid')) {
+                funcAddError(pwLabel, 'errorPw', 'Preencha uma senha valida.');
+            }
+        };
+        
+        funcAddSuccess(password, pwLabel, 'errorPw');
+        
         if (!usuarioInvalido) {
             allUsers.push(newAccount);
             localStorage.setItem('allUsers', JSON.stringify(allUsers));
             alert('sucesso');
             window.location.href = '../index.html';
         };
-    })
+    });
     
 });
 
 $('.login').click(() => {
     $('body').animate('slow', () => { window.location.href = '../index.html' });
 });
-
-
-
-
-
-
-
-
-// Validação email inicial.
-
-    // if (!email && invalid.length <= 1) {
-        //     emailLabel.addClass('invalid').append(`<span class="errorMail"> - Preencha um email valido.</span>`)
-        // } else if (usuarioInvalido && invalid.length <= 1) {
-        //     $('.errorMail').remove()
-        //     emailLabel.addClass('invalid').append(`<span class="error"> - Email ja cadastrado.</span>`)
-        // } else if (!usuarioInvalido) {
-        //     $('.errorMail').remove()
-        //     $('.error').remove()
-        //     emailLabel.removeClass('invalid')
-        //     emailLabel.addClass('success')
-        // }
