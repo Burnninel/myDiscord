@@ -1,0 +1,113 @@
+#arrowLeftBottom {
+    position: relative;
+    right: 275px;
+    top: 90px;
+    animation: arrowLeftBottom 1s infinite;
+}
+
+@keyframes arrowLeftBottom {
+    0% {
+        transform: translate(0px, 0);
+    }
+    50% {
+        transform: translate(-3px, 0px);
+    }
+    100% {
+        transform: translate(0px, 0);
+    }
+}
+
+#arrowLeftInclined {
+    position: relative;
+    right: 315px;
+    top: 35px;
+    animation: arrowLeftInclined 1s infinite;
+}
+
+@keyframes arrowLeftInclined {
+    0% {
+        transform: translate(0px, 0px) rotate(45deg);
+    }
+    50% {
+        transform: translate(-3px, -3px) rotate(45deg);
+    }
+    100% {
+        transform: translate(0px, 0px) rotate(45deg);
+    }
+}
+
+#arrowLeftTop {
+    position: relative;
+    right: 305px;
+    top: 20px;
+    animation: arrowLeftTop 1s infinite;
+}
+
+@keyframes arrowLeftTop {
+    0% {
+        transform: translate(0px, 0px) rotate(65deg);
+    }
+    50% {
+        transform: translate(-3px, -3px) rotate(65deg);
+    }
+    100% {
+        transform: translate(0px, 0px) rotate(65deg);
+    }
+}
+
+#arrowRightBottom {
+    position: relative;
+    right: -380px;
+    top: 65px;
+    animation: arrowRightBottom 1s infinite;
+}
+
+@keyframes arrowRightBottom {
+    0% {
+        transform: translate(0px, 0) rotate(180deg) rotateX(180deg);
+    }
+    50% {
+        transform: translate(-3px, 0px) rotate(180deg) rotateX(180deg);
+    }
+    100% {
+        transform: translate(0px, 0) rotate(180deg) rotateX(180deg);
+    }
+}
+
+#arrowRightInclined {
+    position: relative;
+    right: -315px;
+    top: 10px;
+    animation: arrowRightInclined 1s infinite;
+}
+
+@keyframes arrowRightInclined {
+    0% {
+        transform: translate(0px, 0px) rotateX(180deg) rotate(225deg);
+    }
+    50% {
+        transform: translate(-3px, 3px)  rotateX(180deg) rotate(225deg);
+    }
+    100% {
+        transform: translate(0px, 0px)  rotateX(180deg) rotate(225deg);
+    }
+}
+
+#arrowRightTop {
+    position: relative;
+    right: -205px;
+    top: -5px;
+    animation: arrowRightTop 1s infinite;
+}
+
+@keyframes arrowRightTop {
+    0% {
+        transform: translate(0px, 0px) rotate(105deg) rotateX(180deg);
+    }
+    50% {
+        transform: translate(-3px, 3px) rotate(105deg) rotateX(180deg);
+    }
+    100% {
+        transform: translate(0px, 0px) rotate(105deg) rotateX(180deg);
+    }
+}

@@ -119,7 +119,7 @@ $(document).one('click', '#addChannel', function() {
 
 $(document).on('click', '#addChannel', function() {
     
-    $('.modal').show();
+    $('#modalChannels').show();
     $('.firstModal').show();
 
     $('.secondModal').hide();
@@ -199,7 +199,8 @@ function createNewChannel() {
     var primeiraLetra = input.charAt(0).toUpperCase();
     var random = Math.floor(Math.random() * 1000) + 1;
     
-    var content =   `
+    var content =   
+                `
                     <div class="hoverChannel" id="${random}">
 
                         <div class="wherechannel"></div>
@@ -246,7 +247,7 @@ $(document).on('click', '#btnNewChannel', function() {
 
     $('.inputNC').val('');
 
-    $('.modal').hide();
+    $('#modalChannels').hide();
     $('.modal-backdrop').hide();
     
 });

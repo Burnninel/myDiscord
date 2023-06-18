@@ -14,7 +14,7 @@
     margin: 4px 8px 4px 8px;
 }
 
-li {
+.listButton {
     display: flex;
     align-items: center;
     list-style: none;
@@ -24,7 +24,7 @@ li {
     border-radius: 2px;
 }
 
-li:hover {
+.listButton:hover {
     background-color: #5865f2;
     color: #ffffff;
 

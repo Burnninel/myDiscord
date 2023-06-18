@@ -1,8 +1,8 @@
-.modal {
+#modalChannels {
   display: none;
 }
 
-.modal-content {
+.modalContentChannels {
   max-width: 445px;
   left: 25px;
   display: none;

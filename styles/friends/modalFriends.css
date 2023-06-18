@@ -1,0 +1,145 @@
+#modalFriendsID {
+    background-color: #00000083;
+}
+
+#allModalFriends {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    bottom: 13px;
+}
+
+#modalContentFriends {
+    background-color: #2b2d31;
+    min-width: 570px;
+}
+
+#titleModalFriends {
+    white-space: nowrap;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 0.6px;
+}
+
+#headerModalFriends {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 18px;
+    padding: 18px 18px 0px 18px;
+}
+
+#inputModalFriends {
+    outline: none;
+    border: none;
+    color: #c3c1c17c;
+    background-color: #1e1f22;
+    height: 70px;
+    width: 100%;
+    padding: 18px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+#inputModalFriends::placeholder {
+    color: #737373;
+    width: 100%;
+}
+
+#bodyModalFriends {
+    width: 100%;
+    color: #c3c1c17c;
+}
+
+#spanModalFriends {
+    text-transform: uppercase;
+    color: #aaacad;
+    font-weight: 600;
+    padding-left: 28px;
+    font-size: 12px;
+}
+
+.listModalFriends {
+    overflow-y: scroll;
+    margin-right: 4px;
+    margin-bottom: 16px;
+}
+
+#ulModalFriends {
+    list-style: none;
+    max-height: 86px;
+    width: 100%;
+    padding: 0px 6px 0px 18px;
+}
+
+.listModalFriends::-webkit-scrollbar { width: 8px; }
+
+.listModalFriends::-webkit-scrollbar-track { background: #232427; border-radius: 8px; }
+
+.listModalFriends::-webkit-scrollbar-thumb { background-color: #232427; border-radius: 8px; }
+
+.itemListModalFriends {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    color: #aaacad;
+    height: 34px;
+    width: 100%;
+    border-radius: 3px;
+    padding-left: 12px;
+}
+
+.itemListModalFriends:hover { background-color: #404249; }
+
+.channelProperties {
+    display: flex;
+    flex-direction: row;
+}
+
+.chatNameModalFriends {
+    margin-left: 8px;
+    font-size: 17px;
+}
+
+.typeChannelsModalFriends {
+    text-transform: uppercase;
+    color: #929292;
+    font-size: 10px;
+}
+
+.nameChannel {
+    font-size: 14px;
+    color: #929292;
+    margin-right: 10px;
+}
+
+#textTfootModalfriends {
+    text-align: center;
+    height: 36px;
+}
+
+#hintTitle {
+    font-size: 12px;
+    font-weight: 600;
+    color: #1db45e;
+}
+
+#hintText {
+    font-size: 12px;
+    color: #aaacad;
+}
+
+.elementText {
+    text-decoration: none;
+    color: #929292;
+    padding: 2px;
+    margin: 1px;
+    border-radius: 4px;
+    background-color: #1e1f22;
+}
+
+#readMoreFriends { text-decoration: none; }
